@@ -34,6 +34,7 @@ apk --no-cache add \
   python \
   tar \
   ttf-freefont \
+  ttf-font-awesome \
   wget \
   xz
 
