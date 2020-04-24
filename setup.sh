@@ -24,7 +24,9 @@ retry() {
 }
 
 echo "==> Install system packages"
-apk --no-cache add \
+apk --no-cache \
+    --repository "http://dl-3.alpinelinux.org/alpine/edge/testing/" \
+  add \
   ghostscript \
   gnupg \
   graphviz \
@@ -34,7 +36,7 @@ apk --no-cache add \
   python \
   tar \
   ttf-freefont \
-  ttf-font-awesome \
+  ttf-font-awesome-4 \
   wget \
   xz
 
